@@ -1,8 +1,8 @@
 module pyrevittelemetryserver
 
-go 1.23
+go 1.23.0
 
-toolchain go1.24.3
+toolchain go1.24.5
 
 require (
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
