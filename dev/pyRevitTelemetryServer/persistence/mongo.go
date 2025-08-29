@@ -83,7 +83,7 @@ func (w MongoDBConnection) WriteEventTelemetryV2(logrec *EventTelemetryRecordV2,
 func commitMongo(connStr string, targetCollection string, logrec interface{}, logger *cli.Logger) (*Result, error) {
 	// parse and grab database name from uri
 	logger.Debug("check connection string")
-	connStringInfo, err := connstring.ParseAndValidate(connStr)
+	connStringInfo, err := connstring.Parse(connStr)
 
 	if err != nil {
 		return nil, err
